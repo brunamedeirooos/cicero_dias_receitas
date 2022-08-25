@@ -7,6 +7,18 @@
     font-family: 'Titillium Web', sans-serif;
 }
 
+body{
+  background-color: bisque;
+}
+
+
+.titulo{
+  font-size: 20px;
+  display: flex;
+  
+  
+}
+
 
   .container{
     max-width: 1080px;
@@ -14,6 +26,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    
   }
 
   header{
@@ -34,6 +47,7 @@
 
   .menu{
     width: 50%; /* determinando o tamanho do menu */
+    flex-wrap: wrap;
   }
 
   .menu nav a{
@@ -81,4 +95,71 @@
   }
 
   
-  
+  .container-cards{
+    display: flex;
+    justify-content:center;
+    flex-wrap: wrap;
+    margin-top: 10%;
+    
+  }
+
+  .cards{
+    width: 300px;
+    margin: 10px;
+    background-color:white ;
+    border-radius: 10px;
+    transition: 0.4s;
+  }
+
+  .card-img img{
+    width: 100%;
+    border-radius: 10px 10px 0px 0px;
+  }
+
+  .legenda h2{
+    text-align: center;
+    
+  }
+
+  .legenda p{
+    text-align: justify;
+    margin-bottom: 10px;
+    padding: 5px;
+  }
+
+  .card-footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    
+  }
+
+  .card-footer button{
+    width: 150px;
+    background: black;
+    border: 2px solid #FF7100;
+    font-size: 15px;
+    color: #ffffff;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-bottom: 10px;
+    transition: 0.3s;
+    
+
+  }
+
+  .card-footer button a{
+    text-decoration: none;
+    color:#FF7100;
+  }
+
+  .card-footer button:hover{
+      background-color: #ffffff;
+      color:black;
+      border: 2px solid black;
+  }
+
+  .cards:hover{
+    box-shadow: 3.9px 7.8px 7.8px hsl(0deg 0% 0% / 0.38);
+  }
