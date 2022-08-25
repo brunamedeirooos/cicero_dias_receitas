@@ -1,55 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Titillium+Web:wght@200;300&display=swap');
+
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Titillium Web', sans-serif;
 }
 
-.container {
-    width: 100%;
-    max-width: 1200px;
-    margin: 0 auto;
-  }
 
-  header {
-    background-color: #e6e6e6;
-    width: 100%;
-    padding: 10px;
-    position: fixed;
-    top: 0;
-  }
-
-  header .container {
-    display: flex;
-  }
-
-  header figure {
-    display: flex;
-    width: 100%;
-    align-items:center;
-   
-  }
-  header figure figcaption {
-    font-weight: bold;
-    font-size: 25px;
-  }
-  header nav {
-    width: 300px;
-  }
-
-  header nav ul {
+  .container{
+    max-width: 1080px;
+    margin: 0 auto; /* container no centro da página */
     display: flex;
     align-items: center;
-    justify-content: space-between;
-    height: 100%;
-  }
-  header nav ul li a {
-    color: #1c1c1c;
-    font-size: 20px;
-    font-weight: 400;
+    justify-content: center;
   }
 
-  ul{
-    padding: 15px;
-    display:flex;
-      gap: 32px;
+  header{
+    background-color: rgb(22, 198, 131);
+    width: 100%;
+   padding: 5px;
   }
+
+  .logo, .sociais{
+    width: 25%;  /* determinando o tamanho do logo e sociais */
+  }
+
+  .logo img {
+    width: 70px;
+    cursor: pointer;
+  }
+
+
+  .menu{
+    width: 50%; /* determinando o tamanho do menu */
+  }
+
+  .menu nav a{
+    color: #ffffff;
+    text-decoration: none; /* removendo a linha que fica embaixo do link */
+    padding-right: 50px;
+    font-size: 18px;
+    position: relative; /* definindo posição do traço */
+
+  }
+
+  .menu nav a::after{
+    content: " ";
+    width: 0px;
+    height: 4px;
+    background-image: linear-gradient(45deg, #FF2500 , #FF7100);
+    position: absolute; /* definindo posição do traço */
+    top: 25px;
+    left: 0;  
+    transition: width 0.5s;
+    
+  }
+
+  .menu nav a:hover::after{
+    width: 30px;
+
+  }
+
+
+
+
+  .sociais button{
+    width: 35px;
+    height: 35px ;
+    background-image: linear-gradient(45deg, #FF2500 , #FF7100);
+    border: none;
+    margin-right: 10px; /* distancioamento de um icone para outro */
+    border-radius: 5px;
+    cursor: pointer;
+  }
+
+  .sociais button i{
+    font-size: 20px;  /* os icones sao fontes que possuem as mesmas propriedades do css das fontes */
+    color: #ffffff;
+  }
+
+  
+  
